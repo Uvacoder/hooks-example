@@ -1,6 +1,6 @@
 import React from "react"
 
-import "./ExampleUS.css"
+import "../Example.css"
 
 class ExampleUS extends React.Component {
   state = {
@@ -15,7 +15,7 @@ class ExampleUS extends React.Component {
 
   render() {
     return (
-      <>
+      <article className="example-us">
         <h1>useState example</h1>
 
         <input
@@ -27,7 +27,7 @@ class ExampleUS extends React.Component {
         <p>
           Value: {this.state.value}
         </p>
-      </>
+      </article>
     )
   }
 }

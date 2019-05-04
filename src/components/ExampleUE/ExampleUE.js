@@ -1,6 +1,7 @@
 import React from "react"
 
 import Spinner from "../Spinner/Spinner"
+import "../Example.css"
 
 class ExampleUE extends React.Component {
   state = {
@@ -20,10 +21,10 @@ class ExampleUE extends React.Component {
 
   render() {
     return (
-      <>
+      <article className="example-ue">
         <h1>useEffect example</h1>
         {this.state.url !== '' ? <img src={this.state.url} alt="dog"/> : <Spinner />}
-      </>
+      </article>
     )
   }
 }
